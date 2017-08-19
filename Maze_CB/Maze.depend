@@ -1,0 +1,42 @@
+# depslib dependency file v1.0
+1502565420 source:c:\code\cpp\maze_cb\maze.cpp
+	<iostream>
+	"MazeMap.h"
+	"MazePerson.h"
+	<iostream>
+	<stdlib.h>
+	"MyMazeMap.H"
+	"MyMazer.H"
+
+1502565420 c:\code\cpp\maze_cb\mazemap.h
+	"Public.H"
+
+1502565420 c:\code\cpp\maze_cb\public.h
+
+1502565420 c:\code\cpp\maze_cb\mazeperson.h
+	<iostream>
+	<stdlib.h>
+	<windows.h>
+	"Public.H"
+
+1502565420 c:\code\cpp\maze_cb\mymazemap.h
+
+1502565420 c:\code\cpp\maze_cb\mymazer.h
+	"Public.H"
+
+1502565420 source:c:\code\cpp\maze_cb\mazemap.cpp
+	<iostream>
+	"MazeMap.h"
+
+1502565420 source:c:\code\cpp\maze_cb\mazeperson.cpp
+	"MazePerson.h"
+	"MazeMap.h"
+
+1502565420 source:c:\code\cpp\maze_cb\mymazemap.cpp
+	"MazeMap.H"
+	"MyMazeMap.H"
+
+1502565420 source:c:\code\cpp\maze_cb\mymazer.cpp
+	"MyMazer.H"
+	"MazePerson.h"
+
