@@ -17,3 +17,21 @@
 	"Node.h"
 	<iostream>
 
+1521019673 source:c:\code\cpp\exe_03_14_list&selectionsort\main.cpp
+	<iostream>
+	"Node.h"
+	"List.h"
+
+1521000269 c:\code\cpp\exe_03_14_list&selectionsort\include\node.h
+	<iostream>
+
+1521008540 c:\code\cpp\exe_03_14_list&selectionsort\include\list.h
+	"Node.h"
+	<iostream>
+
+1521008577 source:c:\code\cpp\exe_03_14_list&selectionsort\src\list.cpp
+	"List.h"
+
+1521000269 source:c:\code\cpp\exe_03_14_list&selectionsort\src\node.cpp
+	"Node.h"
+
