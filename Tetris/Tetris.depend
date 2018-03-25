@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1521987637 source:c:\code\cpp\tetris\src\screen.cpp
+	"screen.h"
+
+1521988218 c:\code\cpp\tetris\include\screen.h
+	<iostream>
+
+1521991057 source:c:\code\cpp\tetris\main.cpp
+	<iostream>
+	<conio.h>
+	"show_frame.h"
+
+1521991140 c:\code\cpp\tetris\include\show_frame.h
+	<cstdlib>
+	"screen.h"
+	<time.h>
+
+1521989758 source:c:\code\cpp\tetris\src\show_frame.cpp
+	"show_frame.h"
+
+1521990902 source:c:\code\cpp\tetris\src\brick.cpp
+	"brick.h"
+
+1521990902 c:\code\cpp\tetris\include\brick.h
+	<iostream>
+
+1521991185 source:c:\code\cpp\tetris\src\square.cpp
+	"square.h"
+
+1521991185 c:\code\cpp\tetris\include\square.h
+	"brick.h"
+
