@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdlib>
 int main(){
   int a = 0;
   int b = 0;
@@ -7,5 +8,6 @@ int main(){
   std::cin >> b;
   sum = a + b;
   std::cout << sum  << std::endl;
+  system("pause");
   return 0;
 }
