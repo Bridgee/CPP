@@ -7,7 +7,7 @@ bool mat(string a);
 int main()
 {
 	string match = "({[]})";
-	
+
 	if (mat(match))
 	{
 		cout << "The brackets are matching" << endl;
@@ -71,5 +71,4 @@ bool mat(string a)
 	{
 		return true;
 	}
-	
 }
