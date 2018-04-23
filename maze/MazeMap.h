@@ -1,47 +1,47 @@
 /*--------------------------------------------*/
-/* ÎÄ¼þÃû£ºMazeMap.h                          */
-/* ÎÄ¼þÄÚÈÝ£º¶¨ÒåMazeMapÀà                    */
-/* ×÷Õß£ºÔ¬´ºÐñ                               */
-/* ÈÕÆÚ£º2015Äê6ÔÂ2ÈÕ                        */
+/* ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½MazeMap.h                          */
+/* ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½ï¿½ï¿½MazeMapï¿½ï¿½                    */
+/* ï¿½ï¿½ï¿½ß£ï¿½Ô¬ï¿½ï¿½ï¿½ï¿½                               */
+/* ï¿½ï¿½ï¿½Ú£ï¿½2015ï¿½ï¿½6ï¿½ï¿½2ï¿½ï¿½                        */
 /*--------------------------------------------*/
 
 /*
- * ÀàÃû³Æ£ºMazeMap   
- * ¹¦  ÄÜ£ºÉú³É²¢»æÖÆÃÔ¹¬µØÍ¼
+ * ï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½MazeMap   
+ * ï¿½ï¿½  ï¿½Ü£ï¿½ï¿½ï¿½ï¿½É²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¹ï¿½ï¿½ï¿½Í¼
  */
 #ifndef MAZEMAP_H_
 #define MAZEMAP_H_
 
-#define screenWidth 80    //×Ö·ûÄ£Ê½ÏÂÆÁÄ»¿í¶È
-#define screenHeight 25   //×Ö·ûÄ£Ê½ÏÂÆÁÄ»¸ß¶È
-//#define WALL 1            //¶¨ÒåÇ½±ÚÓÃ1±íÊ¾
-//#define ROAD 0            //¶¨ÒåÍ¨µÀÓÃ0±íÊ¾
+#define screenWidth 80    //ï¿½Ö·ï¿½Ä£Ê½ï¿½ï¿½ï¿½ï¿½Ä»ï¿½ï¿½ï¿½
+#define screenHeight 25   //ï¿½Ö·ï¿½Ä£Ê½ï¿½ï¿½ï¿½ï¿½Ä»ï¿½ß¶ï¿½
+//#define WALL 1            //ï¿½ï¿½ï¿½ï¿½Ç½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½Ê¾
+//#define ROAD 0            //ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½0ï¿½ï¿½Ê¾
 
 #include "Public.H"
 
 class MazeMap
 {
 public:
-	MazeMap();										     //¹¹Ôìº¯Êý£¬Ê¹ÓÃÄ¬ÈÏµÄµØÍ¼
-	//¹¹Ôìº¯Êý£¬Ê¹ÓÃÓÃ»§×Ô¶¨ÒåµÄµØÍ¼¡£
-	//*mazeMap µØÍ¼¶þÎ¬Êý×éÊ×µØÖ·£»row µØÍ¼Êý×éÖÐµÄÐÐÊý£»column µØÍ¼Êý×éÖÐµÄÁÐÊý
+	MazeMap();										     //ï¿½ï¿½ï¿½ìº¯ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½Ä¬ï¿½ÏµÄµï¿½Í¼
+	//ï¿½ï¿½ï¿½ìº¯ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½Ã»ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½Äµï¿½Í¼ï¿½ï¿½
+	//*mazeMap ï¿½ï¿½Í¼ï¿½ï¿½Î¬ï¿½ï¿½ï¿½ï¿½ï¿½×µï¿½Ö·ï¿½ï¿½row ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½column ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½
 	MazeMap(int *mazeMap, int row, int column);		
-	void setMazeWall(char wall);                         //ÉèÖÃ±íÊ¾Ç½µÄ×Ö·û
-	void setMazeRoad(char road);					     //ÉèÖÃ±íÊ¾Â·µÄ×Ö·û
-	void defaultMode();                                  //ÉèÖÃÃÔ¹¬µÄÄ¬ÈÏµØÍ¼
-	void setMazeMap(int *mazeMap,int row,int column);    //ÖØÐÂÉèÖÃÃÔ¹¬µØÍ¼
-	void drawMap() const;                                //ÉùÃ÷»æÖÆÃÔ¹¬µØÍ¼µÄº¯Êý
-	static char getRoadChar();                           //»ñÈ¡±íÊ¾Í¨Â·µÄ×Ö·û
-    static bool checkWallOrNot(int mazeX,int mazeY);     //ÉùÃ÷¼ì²éÊÇ·ñÓöµ½ÃÔ¹¬Ç½±ÚµÄº¯Êý
-	static bool checkMazeDoor(int mazeX,int mazeY);      //ÉùÃ÷¼ì²éÊÇ·ñÓöµ½ÃÔ¹¬Èë¿Ú/³ö¿ÚµÄº¯Êý
+	void setMazeWall(char wall);                         //ï¿½ï¿½ï¿½Ã±ï¿½Ê¾Ç½ï¿½ï¿½ï¿½Ö·ï¿½
+	void setMazeRoad(char road);					     //ï¿½ï¿½ï¿½Ã±ï¿½Ê¾Â·ï¿½ï¿½ï¿½Ö·ï¿½
+	void defaultMode();                                  //ï¿½ï¿½ï¿½ï¿½ï¿½Ô¹ï¿½ï¿½ï¿½Ä¬ï¿½Ïµï¿½Í¼
+	void setMazeMap(int *mazeMap,int row,int column);    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¹ï¿½ï¿½ï¿½Í¼
+	void drawMap() const;                                //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¹ï¿½ï¿½ï¿½Í¼ï¿½Äºï¿½ï¿½ï¿½
+	static char getRoadChar();                           //ï¿½ï¿½È¡ï¿½ï¿½Ê¾Í¨Â·ï¿½ï¿½ï¿½Ö·ï¿½
+    static bool checkWallOrNot(int mazeX,int mazeY);     //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¹ï¿½Ç½ï¿½ÚµÄºï¿½ï¿½ï¿½
+	static bool checkMazeDoor(int mazeX,int mazeY);      //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¹ï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½ï¿½ÚµÄºï¿½ï¿½ï¿½
 
 private:
 
-	char mazeWall;                     //ÉùÃ÷ÃÔ¹¬±íÊ¾Ç½±ÚµÄ×Ö·û
-	static char mazeRoad;              //ÉùÃ÷ÃÔ¹¬±íÊ¾Í¨Â·µÄ×Ö·û
-	static int mazeWidth;              //ÉùÃ÷ÃÔ¹¬µÄ¿í¶È
-	static int mazeHeight;             //ÉùÃ÷ÃÔ¹¬µÄ¸ß¶È
-	static int mazeMapArray[screenHeight][screenWidth];//ÉùÃ÷ÃÔ¹¬µÄµØÍ¼Êý×é
+	char mazeWall;                     //ï¿½ï¿½ï¿½ï¿½ï¿½Ô¹ï¿½ï¿½ï¿½Ê¾Ç½ï¿½Úµï¿½ï¿½Ö·ï¿½
+	static char mazeRoad;              //ï¿½ï¿½ï¿½ï¿½ï¿½Ô¹ï¿½ï¿½ï¿½Ê¾Í¨Â·ï¿½ï¿½ï¿½Ö·ï¿½
+	static int mazeWidth;              //ï¿½ï¿½ï¿½ï¿½ï¿½Ô¹ï¿½ï¿½Ä¿ï¿½ï¿½
+	static int mazeHeight;             //ï¿½ï¿½ï¿½ï¿½ï¿½Ô¹ï¿½ï¿½Ä¸ß¶ï¿½
+	static int mazeMapArray[screenHeight][screenWidth];//ï¿½ï¿½ï¿½ï¿½ï¿½Ô¹ï¿½ï¿½Äµï¿½Í¼ï¿½ï¿½ï¿½ï¿½
 
 };
 #endif //MAZEMAP_H_
